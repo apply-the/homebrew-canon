@@ -10,8 +10,8 @@ brew install canon
 canon --version
 ```
 
-The `canon` formula builds Canon `0.40.0` directly from the tagged source
-repository using the toolchain pinned by the repo.
+The `canon` formula builds the latest tagged Canon release directly from the
+source repository using the toolchain pinned by the repo.
 
 ## Local Tap Development
 
@@ -22,26 +22,26 @@ brew reinstall apply-the/canon/canon
 
 ## Maintainer Notes
 
-This tap is updated from the main Canon repository by
-`/Users/rt/workspace/apply-the/canon/.github/workflows/release.yml`.
-
-Required setup in the source repository:
-
-- Add the secret `HOMEBREW_TAP_GITHUB_TOKEN` in `apply-the/canon`.
-- The token must be able to read metadata and write contents plus pull requests
-	in `apply-the/homebrew-canon`.
-- A fine-grained PAT scoped to `apply-the/homebrew-canon` with
-	`Contents: Read and write`, `Pull requests: Read and write`, and
-	`Metadata: Read-only` is sufficient.
+This tap updates itself from the latest tagged Canon release via
+`.github/workflows/sync-latest-canon-tag.yml`.
 
 Operational notes:
 
-- The Canon release workflow renders the Homebrew formula in the source repo,
-	checks out this tap, and opens a PR with the updated `Formula/canon.rb`.
-- No GitHub Actions secret is required in this tap repository unless you add
-	tap-local workflows later.
-- If branch protection is enabled here, ensure the token owner can push a
-	branch and open pull requests.
+- The tap-local workflow resolves the latest semver tag from `apply-the/canon`
+	and rewrites `Formula/canon.rb` to that exact tag and version.
+- The workflow uses this repository's `GITHUB_TOKEN` with `contents: write` to
+	commit directly to `main` when the formula changes.
+- If branch protection is enabled here, allow GitHub Actions to push to `main`
+	or replace the default token with a repository secret for a bot account.
+
+## Release Checklist
+
+1. In `apply-the/canon`, push the release tag after the tagged source repo is
+	ready for Homebrew consumers.
+2. Wait for or manually run `.github/workflows/sync-latest-canon-tag.yml` in
+	this repository.
+3. Verify the updated tap with `brew reinstall apply-the/canon/canon` and
+	`canon --version`.
 
 ## Contents
 
