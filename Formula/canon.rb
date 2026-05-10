@@ -5,8 +5,8 @@ class Canon < Formula
   homepage "https://github.com/apply-the/canon"
   license "MIT"
 
-  url "https://github.com/apply-the/canon", using: :git, tag: "0.43.0"
-  version "0.43.0"
+  url "https://github.com/apply-the/canon", using: :git, tag: "0.44.0"
+  version "0.44.0"
 
   head "https://github.com/apply-the/canon", branch: "main", using: :git
 
