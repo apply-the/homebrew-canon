@@ -1,7 +1,7 @@
 class Canon < Formula
   desc "Governed local-first method engine for AI-assisted software engineering"
   homepage "https://github.com/apply-the/canon"
-  version "0.54.0"
+  version "0.55.0"
   license "MIT"
 
   on_macos do
