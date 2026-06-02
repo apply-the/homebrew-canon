@@ -1,30 +1,30 @@
 class Canon < Formula
   desc "Governed local-first method engine for AI-assisted software engineering"
   homepage "https://github.com/apply-the/canon"
-  version "0.63.0"
+  version "0.64.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/apply-the/canon/releases/download/0.63.0/canon-0.63.0-macos-arm64.tar.gz"
-      sha256 "d2c04d32e7bcc861826030f8d412717f24f9b4d3098cdf3aa43c6390e39d92cf"
+      url "https://github.com/apply-the/canon/releases/download/0.64.0/canon-0.64.0-macos-arm64.tar.gz"
+      sha256 "79bf8539b5dc841b24250ef894cf88691d772d0b6d680d9a70b7b16e8bb1b842"
     end
 
     on_intel do
-      url "https://github.com/apply-the/canon/releases/download/0.63.0/canon-0.63.0-macos-x86_64.tar.gz"
-      sha256 "5b0b31eaf8da263e6f55c9f0d0a117ef8937c8551ded2ba877e6d62161fee6af"
+      url "https://github.com/apply-the/canon/releases/download/0.64.0/canon-0.64.0-macos-x86_64.tar.gz"
+      sha256 "b22652caf231e6f066b287c8a757df8fad27a0dbd90bf593f735a82aad4a6cd2"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/apply-the/canon/releases/download/0.63.0/canon-0.63.0-linux-arm64.tar.gz"
-      sha256 "657b0d86db6349d69b01c35b46c5ab7dd732b5780ae0a9fc77b6d62a2954f52a"
+      url "https://github.com/apply-the/canon/releases/download/0.64.0/canon-0.64.0-linux-arm64.tar.gz"
+      sha256 "6b107eec3d30115de82d4a93fb5cdb20aa4a5109b29a852c311d11f53879cda4"
     end
 
     on_intel do
-      url "https://github.com/apply-the/canon/releases/download/0.63.0/canon-0.63.0-linux-x86_64.tar.gz"
-      sha256 "0e31a4d44fc7dc557afb606245c1e54308afe3d663f0893a8d5a2ba4a4ebf79b"
+      url "https://github.com/apply-the/canon/releases/download/0.64.0/canon-0.64.0-linux-x86_64.tar.gz"
+      sha256 "a7c882a2e5c717d44f701540b95da61d5aa5656a7ddd5c850ea3ed4c09f27410"
     end
   end
 
