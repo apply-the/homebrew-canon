@@ -7,24 +7,24 @@ class Canon < Formula
   on_macos do
     on_arm do
       url "https://github.com/apply-the/canon/releases/download/0.68.0/canon-0.68.0-macos-arm64.tar.gz"
-      sha256 "b01d8c8c47b182186b32e7572c54c21dda3df30ce6aadbaa8288e56bfee22ed9"
+      sha256 "a988ec4d7814c3d9291688cdacd0647b9d8e0611f1169d53c7670342bc89a6a2"
     end
 
     on_intel do
       url "https://github.com/apply-the/canon/releases/download/0.68.0/canon-0.68.0-macos-x86_64.tar.gz"
-      sha256 "6278e69fd408cb3417abc4e6cac107b04f6dc584409a11c5777c3783cc57eb1f"
+      sha256 "edcbdeade2970b87b9cb94c9638de56aa82da60ebde9c197e145b754627f530a"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/apply-the/canon/releases/download/0.68.0/canon-0.68.0-linux-arm64.tar.gz"
-      sha256 "37747791ffd9b90259a0633d1af7c578eb30f145a4bcab008e017a90bdab78ad"
+      sha256 "0c3167bcc544b5e31df5146c295f6f1811a2a14d17fe48a87c78e0b8c011333b"
     end
 
     on_intel do
       url "https://github.com/apply-the/canon/releases/download/0.68.0/canon-0.68.0-linux-x86_64.tar.gz"
-      sha256 "58ead848dd35a918f65320203b5738660089d123634786788c1bad5d3c166cfd"
+      sha256 "24c99ce32dce02d04c69ca6b982808a4e6846c2cd3767bfe0a12d20f97b14113"
     end
   end
 
